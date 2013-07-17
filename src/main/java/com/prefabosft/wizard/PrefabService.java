@@ -1,5 +1,6 @@
 package com.prefabosft.wizard;
 
+import com.prefabosft.wizard.health.TemplateHealthCheck;
 import com.prefabosft.wizard.resource.PrefabResource;
 import com.prefabosft.wizard.util.PrefabWizardUtil;
 import com.yammer.dropwizard.Service;
@@ -19,11 +20,16 @@ public class PrefabService  extends Service<PrefabConfiguration>{
     }
 
     public void initialize(Bootstrap<PrefabConfiguration> prefabConfigurationBootstrap) {
+        prefabConfigurationBootstrap.setName("prefabConfigurationBootstrap is my name");
         System.out.println("initialize->prefabConfigurationBootstrap :"+prefabConfigurationBootstrap);
     }
 
     public void run(PrefabConfiguration prefabConfiguration, Environment environment) throws Exception {
-        environment.addResource(new PrefabResource());
         System.out.println("run->prefabConfiguration :"+prefabConfiguration);
+
+        final String template = prefabConfiguration.getTemplate();
+        final String getDefaultId = prefabConfiguration.getDefaultId();
+        environment.addResource(new PrefabResource(template, getDefaultId));
+        environment.addHealthCheck(new TemplateHealthCheck(template));
     }
 }

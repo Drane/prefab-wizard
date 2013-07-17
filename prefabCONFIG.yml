@@ -1,2 +1,5 @@
 http:
   port: 8081
+
+template: Hello, %s!
+defaultId: Stranger
