@@ -1,4 +1,4 @@
-package com.prefabosft.wizard.health;
+package com.prefabsoft.wizard.health;
 
 import com.yammer.metrics.core.HealthCheck;
 

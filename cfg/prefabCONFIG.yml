@@ -1,0 +1,12 @@
+# Define the HTTP settings
+http:
+  #port: 8080
+  #adminPort: 8081
+  contextParameters:
+      swagger.api.basepath: http://localhost:8080
+      api.version: 0.0.1
+
+serverInfo:
+  name: prefabSERVER
+  version: 0.0.1
+  descriptionTemplate: This is a basic %s!

@@ -12,11 +12,25 @@
         <dropwizard-core.version>0.6.2</dropwizard-core.version>
     </properties>
 
+    <repositories>
+        <repository>
+            <id>federecio-snapshots</id>
+            <url>https://repository-federecio1.forge.cloudbees.com/snapshot/</url>
+        </repository>
+    </repositories>
+
     <dependencies>
+        <!-- DropWizard -->
         <dependency>
             <groupId>com.yammer.dropwizard</groupId>
             <artifactId>dropwizard-core</artifactId>
             <version>${dropwizard-core.version}</version>
+        </dependency>
+        <!-- Swagger https://github.com/federecio/dropwizard-swagger -->
+        <dependency>
+            <groupId>com.federecio</groupId>
+            <artifactId>dropwizard-swagger</artifactId>
+            <version>0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
 

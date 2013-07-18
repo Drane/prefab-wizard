@@ -50,6 +50,17 @@
     <orderEntry type="library" name="Maven: org.jboss.logging:jboss-logging:3.1.0.CR2" level="project" />
     <orderEntry type="library" name="Maven: joda-time:joda-time:2.2" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.datatype:jackson-datatype-joda:2.1.2" level="project" />
+    <orderEntry type="library" name="Maven: com.federecio:dropwizard-swagger:0.1-SNAPSHOT" level="project" />
+    <orderEntry type="library" name="Maven: com.wordnik:swagger-jaxrs_2.9.1:1.2.1" level="project" />
+    <orderEntry type="library" name="Maven: org.scala-lang:scala-library:2.9.1-1" level="project" />
+    <orderEntry type="library" name="Maven: com.wordnik:swagger-core_2.9.1:1.2.1" level="project" />
+    <orderEntry type="library" name="Maven: commons-lang:commons-lang:2.4" level="project" />
+    <orderEntry type="library" name="Maven: com.fasterxml.jackson.module:jackson-module-scala:2.0.0" level="project" />
+    <orderEntry type="library" name="Maven: org.scalastuff:scalabeans:0.2" level="project" />
+    <orderEntry type="library" name="Maven: com.thoughtworks.paranamer:paranamer:2.3" level="project" />
+    <orderEntry type="library" name="Maven: com.wordnik:swagger-annotations_2.9.1:1.2.1" level="project" />
+    <orderEntry type="library" name="Maven: javax.ws.rs:jsr311-api:1.1.1" level="project" />
+    <orderEntry type="library" name="Maven: com.sun.jersey:jersey-client:1.13" level="project" />
   </component>
 </module>
 
